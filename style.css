@@ -50,9 +50,23 @@
   color: darkgray;
 }
 
+.ri-lightbulb-line {
+  display: none;
+  color: darkgray;
+  transition: transform 1s;
+}
+
 .menu-icon {
   width: 25px;
   height: 25px;
+  transition: 0.5s;
+}
+
+.menu-icon-open {
+  width: 25px;
+  height: 25px;
+  transform: rotate(90deg);
+  transition: transform 0.5s;
 }
 /* navbar end */
 
@@ -63,6 +77,18 @@
   justify-content: center;
   align-items: center;
   max-width: 600px;
+}
+
+.spotlight {
+  display: flex;
+  position: absolute;
+  margin-top: -10px;
+  max-width: 1920px;
+  max-height: 1920px;
+}
+
+.spotlight-disable {
+  display: none;
 }
 .introduction-title {
   margin-block-start: 100px;
@@ -272,6 +298,18 @@
   .navbar {
     width: 900px;
   }
+
+  .spotlight {
+    width: 950px;
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 982px) {
+  .spotlight {
+    width: 645px;
+    margin-top: -550px;
+  }
 }
 
 @media (max-width: 933px) {
@@ -296,11 +334,17 @@
   .menu-text {
     display: none;
   }
+
   /* menu end */
 
   /* .introduction-section start */
   .introduction-section {
     max-width: 400px;
+  }
+
+  .spotlight {
+    width: 440px;
+    margin-top: -975px;
   }
 
   .introduction-title {
@@ -383,6 +427,11 @@
   /* .introduction-section start */
   .introduction-section {
     max-width: 300px;
+  }
+
+  .spotlight {
+    width: 300px;
+    margin-top: -1050px;
   }
 
   .introduction-title {

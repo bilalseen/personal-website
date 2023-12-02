@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bilal SEN</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-xrFvJwqoE+q+3kpLlgE4+5U/l08TJ7IE8fPLzvaQsHzT9d1FsO+DfBpnz+AsrAmiB+F7d9T/wGtovECwUsbsYg=="
-      crossorigin="anonymous"
     />
 
     <link rel="stylesheet" href="style.css" />
@@ -21,13 +19,25 @@
           <span class="navbar-text">BILAL SEN</span>
           <div class="menu-container">
             <span class="menu-text">MENU</span>
+            <i
+              class="ri-lightbulb-line"
+              id="light-icon"
+              onclick="toggleLight()"
+            ></i>
             <img
               src="./assets/icons/menu-icon.png"
               alt="Menu Icon"
               class="menu-icon"
+              id="menu-icon"
+              onclick="toggleMenu()"
             />
           </div>
         </div>
+        <img
+          class="spotlight"
+          id="spotlight"
+          src="assets/images/spotlight.png"
+        />
         <!-- navbar end -->
 
         <!-- introduction start -->
@@ -177,5 +187,7 @@
 
       <!-- footer end -->
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
