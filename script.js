@@ -1,26 +1,24 @@
 const toggleLight = () => {
   const spotlight = document.getElementById("spotlight");
+  const elements = ["job-title", "introduce-title"];
 
-  if (spotlight.classList == "spotlight") {
-    spotlight.classList.remove("spotlight");
-    spotlight.classList.add("spotlight-disable");
-  } else {
-    spotlight.classList.remove("spotlight-disable");
-    spotlight.classList.add("spotlight");
-  }
+  spotlight.classList.toggle("spotlight");
+  spotlight.classList.toggle("spotlight-disable");
+
+  elements.forEach((element) => {
+    const el = document.getElementById(element);
+    el.classList.toggle("introduction-title-spotlight-active");
+    el.classList.toggle("introduction-title");
+  });
 };
 
 const toggleMenu = () => {
   const menuIcon = document.getElementById("menu-icon");
   const lightIcon = document.querySelector(".ri-lightbulb-line");
 
-  if (menuIcon.classList == "menu-icon") {
-    menuIcon.classList.remove("menu-icon");
-    menuIcon.classList.add("menu-icon-open");
-    lightIcon.style.display = "flex";
-  } else {
-    menuIcon.classList.remove("menu-icon-open");
-    menuIcon.classList.add("menu-icon");
-    lightIcon.style.display = "none";
-  }
+  const isOpen = menuIcon.classList.contains("menu-icon-open");
+
+  menuIcon.classList.toggle("menu-icon-open", !isOpen);
+  menuIcon.classList.toggle("menu-icon", isOpen);
+  lightIcon.style.display = isOpen ? "none" : "flex";
 };
