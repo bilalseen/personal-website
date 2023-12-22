@@ -343,6 +343,11 @@
     display: none;
   }
 
+  .introduction-title-spotlight-active {
+    text-align: center;
+    font-size: 35px;
+  }
+
   /* menu end */
 
   /* .introduction-section start */
