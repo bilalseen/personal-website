@@ -9,6 +9,7 @@ import Tooltip from "@mui/material/Tooltip";
 import { Language } from "@mui/icons-material";
 import Switch from "./Switch";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -104,20 +105,22 @@ export default function AccountMenu() {
           >
             Projects
           </MenuItem>
-          <MenuItem
-            onClick={handleClose}
-            sx={{
-              display: "flex",
-              color: "#10101A",
-              fontSize: 18,
-              fontWeight: 500,
-              "&:hover": {
-                color: "#FFA500",
-              },
-            }}
-          >
-            CV
-          </MenuItem>
+          <Link to={"/Bilal_Sen_Resume.pdf"} style={{ textDecoration: "none" }}>
+            <MenuItem
+              onClick={handleClose}
+              sx={{
+                display: "flex",
+                color: "#10101A",
+                fontSize: 18,
+                fontWeight: 500,
+                "&:hover": {
+                  color: "#FFA500",
+                },
+              }}
+            >
+              CV
+            </MenuItem>
+          </Link>
           <Divider sx={{ display: "none" }} />
           <MenuItem sx={{ display: "none" }}>
             <ListItemIcon>
