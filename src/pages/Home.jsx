@@ -75,7 +75,11 @@ function App() {
                 width: "100%",
               }}
             >
-              <CardActionArea>
+              <CardActionArea
+                href="https://unsplash.com/photos/a-bunch-of-boats-that-are-sitting-in-the-water-yFF8r2TRjqQ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <CardMedia
                   component="img"
                   height="360"
