@@ -80,7 +80,7 @@ function App() {
                   component="img"
                   height="360"
                   image="https://framerusercontent.com/images/FMbGFT5dh4VLrTr0btn1qCNErw0.jpg"
-                  alt="green iguana"
+                  alt="Bilal Sen Unsplash Gallery"
                   sx={{
                     width: "100%",
                   }}
