@@ -1,20 +1,24 @@
+import { Box } from "@mui/material";
 import React from "react";
-import { Container, Typography } from "@mui/material";
+import ResumePdf from "../files/bilal_sen_cv_en.pdf";
 
 export default function Resume() {
   return (
-    <Container
+    <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
         alignItems: "center",
-        minHeight: "100vh",
+        justifyContent: "center",
+        height: "100vh",
       }}
     >
-      <Typography variant="h2" component="h2" sx={{ color: "#10101A" }}>
-        Resume
-      </Typography>
-    </Container>
+      <embed
+        src={ResumePdf}
+        type="application/pdf"
+        width="100%"
+        height="100%"
+      />
+    </Box>
   );
 }
