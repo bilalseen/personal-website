@@ -21,7 +21,11 @@ const Footer = () => {
         }}
       >
         <Tooltip title="Mail" placement="bottom">
-          <IconButton aria-label="delete" target="_blank">
+          <IconButton
+            aria-label="delete"
+            target="_blank"
+            href="mailto:bilalsen2010@gmail.com"
+          >
             <MailRounded
               sx={{
                 color: "#10101A",
