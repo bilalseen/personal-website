@@ -26,7 +26,7 @@ const Footer = () => {
           marginBlockStart: 1,
         }}
       >
-        <Tooltip title="Mail" placement="bottom">
+        <Tooltip title="Send email" placement="bottom">
           <IconButton
             aria-label="delete"
             target="_blank"
