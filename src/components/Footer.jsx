@@ -1,5 +1,11 @@
 import React from "react";
-import { GitHub, LinkedIn, MailRounded, X } from "@mui/icons-material";
+import {
+  GitHub,
+  LinkedIn,
+  MailRounded,
+  X,
+  CoffeeRounded,
+} from "@mui/icons-material";
 import { Box, Container, IconButton, Stack, Tooltip } from "@mui/material";
 
 const Footer = () => {
@@ -78,6 +84,23 @@ const Footer = () => {
             target="_blank"
           >
             <X
+              sx={{
+                color: "#10101A",
+                "&:hover": {
+                  cursor: "pointer",
+                  color: "#FFA500",
+                },
+              }}
+            />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title="Buy Me a Coffee" placement="bottom">
+          <IconButton
+            aria-label="delete"
+            href="https://buymeacoffee.com/bilalsen"
+            target="_blank"
+          >
+            <CoffeeRounded
               sx={{
                 color: "#10101A",
                 "&:hover": {
