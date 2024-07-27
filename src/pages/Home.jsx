@@ -52,10 +52,10 @@ function App() {
                 textAlign: { xs: "center", xl: "start" },
               }}
             >
-              I am a computer engineering student, currently pursuing my
-              education as a fourth-year student at Iskenderun Technical
-              University. I am dedicated to constantly improving my skills in
-              the field of Front End Development.
+              I graduated from Iskenderun Technical University with a degree in
+              Computer Engineering. I am dedicated to constantly improving my
+              skills in the field of Front End Development. I am currently
+              looking for a job in the field of React Native development.
             </Typography>
             <Typography
               variant="body1"
