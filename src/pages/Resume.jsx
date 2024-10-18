@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import ResumePdf from "../files/bilal_sen_cv_en.pdf";
+import ResumePdf from "../files/bilal_sen_cv.pdf";
 
 export default function Resume() {
   return (
